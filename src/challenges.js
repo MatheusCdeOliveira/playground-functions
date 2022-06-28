@@ -90,12 +90,20 @@ function decode(frase2) {
     .replaceAll('4', 'o')
     .replaceAll('5', 'u');
 
-    return result2
+  return result2;
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array, string) {
+  let arrayObjetos = [];
+  if (array.length === 0) {
+    return 'Vazio!';
+  }
+  array = array.sort();
+  for (let index = 0; index < array.length; index += 1) {
+    arrayObjetos.push({ name: string, tech: array[index] });
+  }
+  return arrayObjetos
 }
 
 module.exports = {
