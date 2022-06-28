@@ -2,9 +2,8 @@
 function compareTrue(a, b) {
   if (a === true && b === true) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 // Desafio 2
@@ -103,7 +102,7 @@ function techList(array, string) {
   for (let index = 0; index < array.length; index += 1) {
     arrayObjetos.push({ name: string, tech: array[index] });
   }
-  return arrayObjetos
+  return arrayObjetos;
 }
 
 module.exports = {
