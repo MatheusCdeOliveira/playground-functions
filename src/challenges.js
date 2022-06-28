@@ -56,26 +56,41 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(numeros) {
   let arrayString = [];
   for (index = 0; index < numeros.length; index += 1) {
-    if (numeros[index] % 3 !== 0 && numeros[index] % 5 !== 0){
-      arrayString.push('bug!')
+    if (numeros[index] % 3 !== 0 && numeros[index] % 5 !== 0) {
+      arrayString.push('bug!');
     }
-    if(numeros[index] % 3 === 0 && numeros[index] % 5 === 0){
-      arrayString.push('fizzBuzz')
+    if (numeros[index] % 3 === 0 && numeros[index] % 5 === 0) {
+      arrayString.push('fizzBuzz');
     } else if (numeros[index] % 3 === 0) {
-      arrayString.push('fizz')
-    } else if(numeros[index] % 5 === 0){
-      arrayString.push('buzz')
+      arrayString.push('fizz');
+    } else if (numeros[index] % 5 === 0) {
+      arrayString.push('buzz');
     }
   }
   return arrayString;
 }
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
+
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase) {
+  let result = frase
+    .replaceAll('a', '1')
+    .replaceAll('e', '2')
+    .replaceAll('i', '3')
+    .replaceAll('o', '4')
+    .replaceAll('u', '5');
+
+  return result;
 }
-function decode() {
-  // seu código aqui
+
+function decode(frase2) {
+  let result2 = frase2
+    .replaceAll('1', 'a')
+    .replaceAll('2', 'e')
+    .replaceAll('3', 'i')
+    .replaceAll('4', 'o')
+    .replaceAll('5', 'u');
+
+    return result2
 }
 
 // Desafio 10
