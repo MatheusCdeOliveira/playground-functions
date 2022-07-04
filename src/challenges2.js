@@ -9,15 +9,6 @@ function confirmaNumOne(numTel) {
   return numeroValidado;
 }
 
-// function confirmaTamanho(numTel) {
-//   let quantidade = numTel.length;
-//   let validacao = true;
-//   if (quantidade !== 11) {
-//     validacao = false;
-//   }
-//   return validacao;
-// }
-
 function confirmaNumTwo(numTel) {
   for (let valor2 of numTel) {
     if (numTel.filter((numeros) => numeros === valor2).length >= 3) {
